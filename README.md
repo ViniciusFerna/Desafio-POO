@@ -8,6 +8,10 @@ A classe `Tenis` representa um tênis no mundo real, contendo os seguintes atrib
   - 1 - P
   - 2 - M
   - 3 - G
+
+ <img width="647" height="264" alt="image" src="https://github.com/user-attachments/assets/3c0684e7-11bd-40f6-8811-94f1b06f6ac5" />
+
+
 ## Métodos
  
 ### trocarModeloTenis
