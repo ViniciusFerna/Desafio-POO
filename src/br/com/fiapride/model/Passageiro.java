@@ -6,6 +6,8 @@ public class Passageiro {
 	
 	public double saldo;
 	
+	public int tamanhoCalcado;
+	
 	public boolean validarSaldoViagem(double saldo, double valor) {
 		if (saldo >= valor) {
 			System.out.println("Pode pagar a viagem");
