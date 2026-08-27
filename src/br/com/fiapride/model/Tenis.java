@@ -2,12 +2,20 @@ package br.com.fiapride.model;
 
 public class Tenis {
 
-	public String modelo;
+	private String modelo;
 	
-	public String cor;
+	private String cor;
 	
-	public int tamanho;
+	private int tamanho;
 	
+	public Tenis(String modelo, String cor, int tamanho) {
+		this.trocarModeloTenis(modelo);
+		this.setCor(cor);
+		this.setTamanho(tamanho);
+	}
+	
+
+
 	public String trocarModeloTenis(String novoModelo) {
 		if (novoModelo != this.modelo) {
 			this.modelo = novoModelo;
@@ -34,9 +42,30 @@ public class Tenis {
 			 System.out.println("Esse tenis e muito grande");
 			 return 7;
 		 }
-		 
-		 
-		 
+		 	 
 	}
+	
+	public String getModelo() {
+		return modelo;
+	}
+	
+	public String getCor() {
+		return cor;
+	}
+
+
+	public void setCor(String cor) {
+		this.cor = cor;
+	}
+	
+	public int getTamanho() {
+		return tamanho;
+	}
+
+
+	public void setTamanho(int tamanho) {
+		this.tamanho = tamanho;
+	}
+
 	
 }
