@@ -1,5 +1,6 @@
 package br.com.fiapride.main;
 
+import br.com.fiapride.model.Marca;
 import br.com.fiapride.model.Passageiro;
 import br.com.fiapride.model.Tenis;
 
@@ -17,7 +18,9 @@ public class TesteTenis {
 		
 		System.out.println("----------------------------------");
 		
-		Tenis tenis1 = new Tenis("Yeezy 350", "Cinza", 2);
+		Marca marca1 = new Marca("Adidas", "Alemanha", true, "1234343");
+		
+		Tenis tenis1 = new Tenis("Yeezy 350", "Cinza", 2, marca1);
 		
 		System.out.println(tenis1.getModelo());
 		
@@ -28,7 +31,9 @@ public class TesteTenis {
 		
 		System.out.println("----------------------------------");
 		
-		Tenis tenis2 = new Tenis("Yeezy 450", "bege", 1);
+		Marca marca2 = new Marca("Nike", "Estados Unidos da América", false, "124344");
+		
+		Tenis tenis2 = new Tenis("Yeezy 450", "bege", 1, marca2);
 		
 		Passageiro passageiro2 = new Passageiro("Pablo", "434546767755", 0);
 		passageiro2.setTamanhoCalcado(1);

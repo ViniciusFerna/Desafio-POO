@@ -8,10 +8,13 @@ public class Tenis {
 	
 	private int tamanho;
 	
-	public Tenis(String modelo, String cor, int tamanho) {
+	private Marca marca;
+	
+	public Tenis(String modelo, String cor, int tamanho, Marca marca) {
 		this.trocarModeloTenis(modelo);
-		this.setCor(cor);
-		this.setTamanho(tamanho);
+		this.cor = cor;
+		this.tamanho = tamanho;
+		this.marca = marca;
 	}
 	
 
@@ -46,26 +49,20 @@ public class Tenis {
 	}
 	
 	public String getModelo() {
-		return modelo;
+		return this.modelo;
 	}
 	
 	public String getCor() {
-		return cor;
+		return this.cor;
 	}
 
-
-	public void setCor(String cor) {
-		this.cor = cor;
-	}
-	
 	public int getTamanho() {
-		return tamanho;
+		return this.tamanho;
 	}
-
-
-	public void setTamanho(int tamanho) {
-		this.tamanho = tamanho;
-	}
-
 	
+	public Marca getMarca() {
+		return this.marca;
+	}
+
+
 }

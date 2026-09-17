@@ -39,7 +39,7 @@ public class Passageiro {
 	}
 	
 	public String getNome() {
-		return nome;
+		return this.nome;
 	}
 
 	public void setNome(String nome) {
@@ -47,7 +47,7 @@ public class Passageiro {
 	}
 
 	public String getCpf() {
-		return cpf;
+		return this.cpf;
 	}
 
 	public void setCpf(String cpf) {
@@ -60,7 +60,7 @@ public class Passageiro {
 	}
 
 	public double getSaldo() {
-		return saldo;
+		return this.saldo;
 	}
 
 	public void setSaldo(double saldo) {
@@ -73,7 +73,7 @@ public class Passageiro {
 	}
 
 	public int getTamanhoCalcado() {
-		return tamanhoCalcado;
+		return this.tamanhoCalcado;
 	}
 
 	public void setTamanhoCalcado(int tamanhoCalcado) {
