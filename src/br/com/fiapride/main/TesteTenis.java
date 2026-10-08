@@ -1,5 +1,7 @@
 package br.com.fiapride.main;
 
+import br.com.fiapride.model.Calcado;
+import br.com.fiapride.model.Chinelo;
 import br.com.fiapride.model.Marca;
 import br.com.fiapride.model.Passageiro;
 import br.com.fiapride.model.Tenis;
@@ -46,8 +48,16 @@ public class TesteTenis {
 		
 		tenis2.validarTamanho(-2);
 		
+		System.out.println("----------------------------------");
 		
+		Calcado calc = new Calcado(2, marca1, "Branco");
 		
+		// Return 0 == Fail
+		System.out.println(calc.validarTamanho(10));
+		
+		Chinelo chinelo = new Chinelo("SLIDE", 3, marca2, "bege");
+		
+		System.out.println(chinelo.validarTamanho(4));
 
 	}
 
