@@ -1,6 +1,6 @@
 package br.com.fiapride.model;
 
-public class Calcado {
+public abstract class Calcado {
 	
 	private int tamanho;
 	
@@ -14,10 +14,7 @@ public class Calcado {
 		this.cor = cor;
 	}
 	
-	public int validarTamanho(int tamanhoCliente) { // 1 - P / 2 - M / 3 - G / 6 - True / 7 - False / 0 - Fail
-		System.out.println("Validação não definida para um calçado genérico");
-		  return 0;
-	}
+	public abstract int validarTamanho(int tamanhoCliente);
 
 	public int getTamanho() {
 		return tamanho;

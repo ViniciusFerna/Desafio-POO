@@ -50,7 +50,7 @@ public class TesteTenis {
 		
 		System.out.println("----------------------------------");
 		
-		Calcado calc = new Calcado(2, marca1, "Branco");
+		Calcado calc = new Chinelo("SLIDE", 3, marca2, "bege");
 		
 		// Return 0 == Fail
 		System.out.println(calc.validarTamanho(10));
